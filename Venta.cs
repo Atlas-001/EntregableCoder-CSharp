@@ -2,10 +2,16 @@
 
 namespace EntregableCoder
 {
-    internal class Venta
+    public class Venta
     {
         public int id { get; set; }
         public string comentarios { get; set; }
+
+        public Venta(int id, string comentarios)
+        {
+            this.id = id;
+            this.comentarios = comentarios;
+        }
 
         public Venta()
         {

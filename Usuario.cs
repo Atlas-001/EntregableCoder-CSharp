@@ -2,7 +2,7 @@
 
 namespace EntregableCoder
 {
-    internal class Usuario
+    public class Usuario
     {
         public int id { get; set; } 
         public string nombre { get; set; }
@@ -10,6 +10,16 @@ namespace EntregableCoder
         public string nombreUsuario { get; set; }
         public string clave { get; set; }
         public string correo { get; set; }
+
+        public Usuario(int id, string nombre, string apellido, string nombreUsuario, string clave, string correo)
+        {
+            this.id = id;
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.nombreUsuario = nombreUsuario;
+            this.clave = clave;
+            this.correo = correo;
+        }
 
         public Usuario()
         {

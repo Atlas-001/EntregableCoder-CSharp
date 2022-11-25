@@ -2,7 +2,7 @@
 
 namespace EntregableCoder
 {
-    internal class Producto
+    public class Producto
     {
         public int id { get; set; }
         public string descripcion { get; set; }
@@ -10,6 +10,16 @@ namespace EntregableCoder
         public int precioVenta { get; set; }
         public int stock { get; set; }
         public int idUsuario { get; set; }
+
+        public Producto(int id, string descripcion, int costo, int precioVenta, int stock, int idUsuario)
+        {
+            this.id = id;
+            this.descripcion = descripcion;
+            this.costo = costo;
+            this.precioVenta = precioVenta;
+            this.stock = stock;
+            this.idUsuario = idUsuario;
+        }
 
         public Producto()
         {
